@@ -8,7 +8,7 @@ docker ps
 docker exec -it most-tested_laravel.test_1 bash
 php artisan migrate
 
-# Installing the auth library
+# Installing the login page library
 # https://laravel.com/docs/8.x/starter-kits#laravel-breeze
 composer require laravel/breeze --dev
 php artisan breeze:install
@@ -27,8 +27,9 @@ http://localhost/login
 From which we can start adding all the testing apparatus.
 
 ### Already included testing:
-Because this application framework loves tests, it comes packaged with some
-tests and tooling already!
+Because this application framework loves tests, it comes packaged with some PHP
+tests and tooling already! At this state, though, there's no JavaScript present,
+so nothing to test, so no packaged JS testing tools yet.
 
 #### Test Types
 * PHP Feature
@@ -49,3 +50,12 @@ tests and tooling already!
 #### See it in action
 `php artisan test`
 
+### How Auth Works at This Point
+* Breeze Controllers: app/Http/Controllers/Auth/*
+* guarded by Web Sessions: \Illuminate\Auth\SessionGuard
+* using users from Eloquent ORM: \Illuminate\Auth\EloquentUserProvider
+
+The framework does have its own tests for the latter two bullets, but they are
+not distributed when you install the framework. Some I'd classify as Unit 
+tests, some as Integration tests. If you want to see them, they can be found
+[here](https://github.com/laravel/framework/tree/8.x/tests/Auth).
