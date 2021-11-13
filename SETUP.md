@@ -1,4 +1,4 @@
-Getting this project to baseline from scratch 
+Getting this project to baseline from scratch
 ```
 # Establishing the app and framework
 # https://laravel.com/docs/8.x/sail
@@ -25,4 +25,27 @@ at this point, we now have access to...
 http://localhost/login
 
 From which we can start adding all the testing apparatus.
+
+### Already included testing:
+Because this application framework loves tests, it comes packaged with some
+tests and tooling already!
+
+#### Test Types
+* PHP Feature
+
+#### Test Runners
+* PHPUnit (vendor/phpunit/phpunit)
+
+#### PHP Test Helpers & Utilities
+* Mockery (vendor/mockery/mockery)
+* Prophecy (vendor/phpspec/prophecy)
+* Faker (vendor/fakerphp/faker)
+* Webmozart Assert (vendor/webmozart/assert)
+* Code Coverage (vendor/phpunit/php-code-coverage)
+* Complexity (vendor/sebastian/complexity)
+* Test Timer (vendor/phpunit/php-test-timer)
+* (many other lower level utilities)
+
+#### See it in action
+`php artisan test`
 
