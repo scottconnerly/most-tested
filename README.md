@@ -15,9 +15,9 @@ First presented at
 
 ## Guides
 * [Establishing the project](SETUP.md)
-* Acceptance Testing
-* Gherkin Testing
-* Visual Regression Testing
+* [Acceptance Testing](tests/Acceptance/AcceptanceTesting.md)
+* [Gherkin Testing](tests/Gherkin/GherkinTesting.md)
+* [Visual Regression Testing](tests/VisualRegression/VisualRegressionTesting.md)
 * a11y Testing
 * Load Testing
 * Unit Testing
