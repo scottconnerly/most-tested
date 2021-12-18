@@ -15,6 +15,7 @@ First presented at
 
 ## Guides
 * [Establishing the project](SETUP.md)
+* Turn it on: `./vendor/bin/sail up -d`
 * [Acceptance Testing](tests/Acceptance/AcceptanceTesting.md)
 * [Gherkin Testing](tests/Gherkin/GherkinTesting.md)
 * [Visual Regression Testing](tests/VisualRegression/VisualRegressionTesting.md)
