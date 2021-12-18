@@ -1,0 +1,36 @@
+{
+  "testSuite": "BackstopJS",
+  "tests": [
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_default_Login_page_0_document_0_phone.png",
+        "test": "../bitmaps_test/20211218-044657/backstop_default_Login_page_0_document_0_phone.png",
+        "selector": "document",
+        "fileName": "backstop_default_Login_page_0_document_0_phone.png",
+        "label": "Login page",
+        "misMatchThreshold": 0.1,
+        "url": "http://host.docker.internal/login",
+        "expect": 0,
+        "viewportLabel": "phone",
+        "error": "Reference file not found /src/backstop_data/bitmaps_reference/backstop_default_Login_page_0_document_0_phone.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "../bitmaps_reference/backstop_default_Login_page_0_document_1_tablet.png",
+        "test": "../bitmaps_test/20211218-044657/backstop_default_Login_page_0_document_1_tablet.png",
+        "selector": "document",
+        "fileName": "backstop_default_Login_page_0_document_1_tablet.png",
+        "label": "Login page",
+        "misMatchThreshold": 0.1,
+        "url": "http://host.docker.internal/login",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "error": "Reference file not found /src/backstop_data/bitmaps_reference/backstop_default_Login_page_0_document_1_tablet.png"
+      },
+      "status": "fail"
+    }
+  ],
+  "id": "backstop_default"
+}
